@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/mmkmou/jenkins-k8s.git'
+    repoURL: 'https://github.com/mmkmou/test-argocd.git'
     path: main
     targetRevision: HEAD
   destination:
