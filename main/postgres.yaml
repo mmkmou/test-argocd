@@ -16,7 +16,7 @@ spec:
         app: postgres
     spec:
       containers:
-      - image: postgres:16.2
+      - image: postgres:14
         name: db
         envFrom:
           - secretRef:
