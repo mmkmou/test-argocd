@@ -15,7 +15,7 @@ spec:
         app: transactions
     spec:
       containers:
-      - image: mmkmou/transactions-api:v4
+      - image: mmkmou/transactions-api
         name: transactions
         envFrom:
         - configMapRef:
