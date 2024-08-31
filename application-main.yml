@@ -3,14 +3,14 @@ kind: Application
 metadata:
   name: devopscohorte2
 spec:
-  project: devops
+  project: default
   source:
     repoURL: 'https://github.com/mmkmou/test-argocd.git'
     path: main
     targetRevision: HEAD
   destination:
     server: 'https://kubernetes.default.svc'
-    namespace: production
+    namespace: default
   syncPolicy:
     syncOptions:
       - CreateNamespace=true

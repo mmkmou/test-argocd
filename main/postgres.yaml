@@ -15,10 +15,6 @@ spec:
       labels:
         app: postgres
     spec:
-      volumes:
-      - name: postgres-data
-        persistentVolumeClaim:
-          claimName: postgres-pvc
       containers:
       - image: postgres:16.2
         name: db
@@ -27,7 +23,5 @@ spec:
               name: db-password
         ports:
         - containerPort: 5432
-        volumeMounts:
-        - name: postgres-data
-          mountPath: /var/lib/postgres
+        
         
