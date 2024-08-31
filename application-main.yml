@@ -1,10 +1,9 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: transaction-main
-  namespace: argocd
+  name: devopscohorte2
 spec:
-  project: default
+  project: devops
   source:
     repoURL: 'https://github.com/mmkmou/test-argocd.git'
     path: main
@@ -15,3 +14,4 @@ spec:
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
+      - ServerSideApply=true
