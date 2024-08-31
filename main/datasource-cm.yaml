@@ -5,5 +5,4 @@ data:
   DATASOURCE_USERNAME: postgres
 kind: ConfigMap
 metadata:
-  creationTimestamp: null
   name: datasource
